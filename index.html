@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Website-Design</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -14,7 +17,8 @@
         <!--------------- nav start------------- -->
         <nav>
             <a href=""><img src="/college/logo.png" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav_link">
+                <i class="fa fa-times" onclick="showMenu()"></i>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -23,9 +27,60 @@
                     <li><a href="#">Home</a></li>
                 </ul>
             </div>
+            <i class="fa  fa-bars" onclick="hideMenu()"></i>
         </nav>
-         <!--------------- nav start------------- -->
+        <!--------------- nav start------------- -->
+        <div class="text-box">
+            <h1>World's First Class University</h1>
+            <p>For hundreds of years, the university has been a place of learning, producing greats such as Socrates and
+                Plato.<br> The key to understanding the world is having the right education that comes from
+                universities.</p>
+            <a class="visited-btn" href="">Visit us to know more</a>
+        </div>
     </section>
+
+<section>
+    <div class="courses">
+        <h1>Our Courses</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque soluta sit! </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque soluta sit!  </p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque soluta sit! </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!------------------ script tag------------------- -->
+    <script>
+        const navLinks = document.getElementById("nav_link");
+        function showMenu() {
+            navLinks.style.right = "0";
+            // console.log('success')
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            console.log('success')
+        }
+    </script>
+<!------------------ script tag------------------- -->
+
 </body>
 
 </html>

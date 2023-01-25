@@ -61,4 +61,149 @@ nav img {
 .nav-links ul li:hover::after {
     width: 100%;
 }
+
 /********************* Nav******************* */
+.text-box {
+    width: 80%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 52px;
+    color: rgb(98, 98, 138);
+}
+
+.text-box p {
+    font-size: 17px;
+    color: rgb(2, 9, 17);
+    margin: 10px 20px;
+}
+
+.visited-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 30px;
+    font-size: 15px;
+    color: rgb(2, 26, 26);
+    border: 1px solid rgb(75, 65, 65);
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.visited-btn:hover {
+    border: 1px solid rgb(236, 230, 230);
+    color: aliceblue;
+    background-color: darkorange;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .visited-btn {
+        color: aliceblue;
+        border: 1px solid white;
+    }
+
+    .nav-links ul li {
+        display: block;
+        /* text-align: center; */
+
+    }
+
+    .nav-links {
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(47, 79, 79, 0.973);
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .nav-links ul li:hover::after {
+        width: 0%;
+    }
+
+    nav .fa {
+        display: block;
+        font-size: 20px;
+        color: aliceblue;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+
+}
+
+.courses {
+    width: 90%;
+    margin: auto;
+    color: aliceblue;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.courses h1{
+    color: black;
+    font-size: 45px;
+    font-weight: 600;
+}
+.courses p{
+    color: rgb(51, 50, 50);
+    margin: 10px 0px;
+    
+}
+
+.row{
+    display: flex;
+    margin-top: 40px;
+}
+.course-col{
+    margin:5px ;
+    background-color: rgba(255, 192, 203, 0.838);
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.course-col:hover{
+    background-color: bisque;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.course-col h3{
+    font-size: 20px;
+    color: black;
+
+}
+.course-col p {
+text-align: justify;
+padding: 0px 20px;
+color: rgb(57, 60, 62);
+
+}
+
+@media only screen and (max-width: 600px){
+    .row{
+        display: flex;
+      flex-direction: column;
+    }
+}
